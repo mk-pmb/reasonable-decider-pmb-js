@@ -23,7 +23,7 @@ eq(isSpecialNumber(999),  { a: false, r: 'just odd',  d: undefined });
 eq(isSpecialNumber(990),  { a: true,  r: 'modulo 9',  d: undefined });
 eq(isSpecialNumber(42),   null);
   // ^-- undecided: there may be other reasons why this number is special.
-eq(isSpecialNumber(20),   { a: true, r: 'modulo 5', d: undefined });
+eq(isSpecialNumber(20),   { a: true,  r: 'modulo 5',  d: undefined });
 
 isSpecialNumber.revis = [
   function (solu) {
@@ -34,7 +34,7 @@ isSpecialNumber.revis = [
   }
 ];
 
-eq(isSpecialNumber(20),   { a: true, r: 'modulo 10', d: 'modulo*2' });
+eq(isSpecialNumber(20),   { a: true,  r: 'modulo 10', d: 'modulo*2' });
 
 
 
